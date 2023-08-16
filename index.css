@@ -1,0 +1,484 @@
+#NavLeft {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#CompAside {
+    background-color: var(--Light);
+    width: 300px;
+    height: 100%;
+    padding-top: 130px;
+    position: fixed;
+    bottom: 0;
+    right: -300px;
+    z-index: 40;
+    transition: .5s;
+
+}
+
+#MobAside {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+    background-color: #5f1305;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    border-radius: 100em;
+    align-items: center;
+    justify-content: center
+}
+
+#MobAside img {
+    width: 25px;
+    height: 25px;
+}
+
+#AsideMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+
+}
+
+#AsideMain div {
+    font-family: Vedic, sans-serif, serif;
+    font-size: 22px;
+    cursor: pointer;
+    color: #272727;
+    padding-bottom: 15px;
+    transition: .5s;
+}
+
+#AsideMain div:hover {
+    font-weight: bold;
+    color: var(--Theme);
+}
+
+.Open {
+    right: 0 !important;
+}
+
+
+#MenuMain {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#Menu {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.MenuItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.MenuItem div {
+    color: var(--Gray);
+    font-family: Vedic, sans-serif, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#Menu img {
+    width: 40px;
+    height: 40px;
+    transition: .5s;
+}
+
+#Menu:hover span {
+    opacity: 1;
+    margin-top: 0px;
+}
+
+#Menu span {
+    margin-top: -20px;
+    font-family: Vedic, sans-serif, serif;
+    font-weight: bold;
+    font-size: 19px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.NavigationDiminish {
+    background-color: var(--Light);
+    height: 100px !important;
+    color: var(--Theme) !important;
+    fill: var(--Theme) !important;
+}
+
+.NavigationDiminish h1 {
+    font-size: 30px;
+}
+
+.NavigationDiminish h2 {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.NavigationDiminish #Menu {
+    display: flex !important;
+}
+
+#Logo {
+    height: 100%;
+}
+
+#Scroller {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#Dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    gap: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 3%;
+}
+
+#Dots div {
+    width: 16px;
+    height: 16px;
+    border-radius: 50em;
+    opacity: .4;
+    background-color: white;
+    transition: .5s opacity;
+}
+
+#Dots div:hover {
+    opacity: 1;
+}
+
+
+#Scroller #Move img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Move {
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.MoveAnimation {
+    animation-name: carousel;
+    animation-duration: 18s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+#Move img {
+    flex-shrink: 0;
+}
+
+@keyframes carousel {
+    0% {
+        right: 0%
+    }
+
+    7% {
+        right: 100%
+    }
+
+    25% {
+        right: 100%
+    }
+
+    32% {
+        right: 200%
+    }
+
+    50% {
+        right: 200%
+    }
+
+    57% {
+        right: 300%
+    }
+
+    75% {
+        right: 300%
+    }
+
+    90% {
+        right: 0%
+    }
+
+    95% {
+        right: 0%
+    }
+
+    100% {
+        right: 0%
+    }
+}
+
+@media (max-width:1000px) {
+    .Scroll span {
+        font-size: 30px !important;
+        line-height: 1.5 !important;
+    }
+}
+
+
+@media (max-width:700px) {
+    #Scroller {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    #Dots {
+        gap: 10px;
+    }
+
+    #Dots div {
+        width: 10px;
+        height: 10px;
+    }
+
+    .Scroll {
+        width: 100% !important;
+        padding: 0;
+    }
+
+    .Scroll span {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+
+    #Images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #SectionLive {
+        width: 80% !important;
+    }
+
+    #Carousel{
+        width: 80% !important;
+        margin-bottom: 20px;
+    }
+
+    #SubText span{
+        font-size: 15px !important;
+    }
+
+    #UpText{
+        font-size: 18px !important;
+    }
+
+    #SectionHeading{
+        font-size:19px !important;
+    }
+
+    #SectionContent{
+        font-size: 15px !important;
+    }
+}
+
+
+.Scroll {
+    background-image: url(assets/Scroll.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 85%;
+    aspect-ratio: 11/5;
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.Scroll span {
+    width: 75%;
+    font-size: 40px;
+    font-family: Vedic, sans-serif, serif;
+    line-height: 2;
+    font-weight: bold;
+    color: #272727;
+}
+
+#Images {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#SectionLive {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: var(--Theme) solid 5px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+#SectionScroll{
+    width: 90%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#SectionHeading {
+    text-align: center;
+    font-size: 23px;
+    position: sticky;
+    font-weight: bold;
+    font-family: Vedic, sans-serif, serif;
+    color: var(--Theme);
+    padding: 15px 0 15px 0;
+    margin-bottom: 5px;
+}
+
+#Carousel{
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#SubText{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #00000090;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#UpText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000090;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: Vedic, sans-serif, serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#Back, #Forward{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+#Back{
+    left: 30px;
+}
+
+#Forward{
+    right: 6px;
+}
+
+#SubText span{
+    width: 100%;
+    text-align: center;
+    font-family: Vedic, sans-serif, serif;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#SubCar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+    right: 0px;
+    position: absolute;
+}
+
+#SubCar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#SectionContent {
+    width: 90%;
+    font-family: Vedic, sans-serif, serif;
+    font-size: 18px;
+}
+
+#IntVideo {
+    margin-top: 40px;
+    border-radius: 20px;
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+#Statistics {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.StatItem {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.StatItem div {
+    text-align: center;
+}
+
+.StatItem div:nth-child(1) {
+    color: var(--Theme);
+    font-size: 55px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px var(--Theme);
+    font-family: Vedic, sans-serif, serif;
+}
+
+.StatItem div:nth-child(2) {
+    font-size: 18px;
+    font-family: Vedic, sans-serif, serif;
+    color: var(--Gray);
+    font-weight: bold;
+}

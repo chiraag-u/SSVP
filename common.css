@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+    font-family: Vedic;
+    src: url(assets/fonts/Vedic.ttf);
+}
+
+:root {
+    --Theme: #5f1305;
+    --Light: antiquewhite;
+    --Gray: #272727;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#SectionScroll::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body,
+#SectionScroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: auto;
+}
+
+#Heading {
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-family: Vedic, sans-serif, serif;
+    color: inherit;
+    font-size: 39px;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: Vedic, sans-serif, serif;
+    color: inherit;
+    font-size: 25px;
+    margin: 0;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#Navigation {
+    top: 0;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    height: 150px;
+    padding: 10px;
+    color: white;
+    transition: .5s;
+    fill: white;
+}
+
+
+.Mobile {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+#FooterLinksList{
+    color: white;
+    margin-top: 5px;
+    font-family: Vedic, sans-serif, serif;
+    font-size: 16px;
+}
+
+#FooterLinksList div{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#FooterLinksList div:hover{
+    font-weight: bolder;
+}
+
+
+#Introduction {
+    width: 100%;
+    background-image: url(./assets/Manuscript.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    flex-direction: column;
+}
+
+
+h3 {
+    font-size: 40px;
+    font-family: Vedic, sans-serif, serif;
+    color: var(--Theme);
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#Border {
+    width: 250px;
+    height: fit-content;
+}
+
+@media (max-width:700px) {
+
+
+
+    #NavLeft {
+        margin-left: -10px !important;
+        width: auto !important;
+    }
+
+    #Navigation {
+        position: sticky;
+        background-color: var(--Light);
+        height: 12vh;
+        padding: 4px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 20px !important;
+        color: var(--Theme) !important;
+    }
+
+    h2 {
+        font-size: 15px !important;
+        color: var(--Theme) !important;
+        margin-top: 5px;
+    }
+
+    #Logo {
+        height: 80% !important;
+        margin-left: -5px;
+        margin-right: -5px;
+        display: none;
+    }
+
+
+    #Introduction {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+
+    h3 {
+        margin-top: 5px;
+    }
+
+    
+    footer {
+        flex-direction: column;
+        padding: 5px !important;
+        padding-bottom: 20px !important;
+    }
+
+    #FooterContact {
+        margin-left: 12px;
+        margin-top: 25px;
+    }
+
+    #FooterLinks {
+        margin-left: 12px;
+        margin-top: 25px;
+    }
+
+
+}
+
+
+
+footer {
+    background-color: var(--Theme);
+    padding: 20px;
+    padding-top: 10px;
+    display: flex;
+}
+
+#FooterMain img {
+    width: 95px;
+    height: 95px;
+    margin-left: -12px;
+    margin-right: -20px;
+}
+
+#FooterMain div:nth-child(2) span2 {
+    font-size: 16px;
+}
+
+#FooterMain div {
+    font-family: Vedic, sans-serif, serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+#FooterMain{
+    width: 100%;
+}
+
+#FooterContact , #FooterLinks{
+    width: 60%;
+}
+
+#FooterContact , #FooterLinks{
+    margin-top: 24px;
+}
+
+#FooterContact span , #FooterLinks span {
+    font-size: 23px;
+    font-family: Vedic, sans-serif, serif;
+    color: white;
+    font-weight: bolder;
+}
+
+#FooterContact img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px 10px 0 10px;
+}
+
+#FHeading {
+    font-family: Vedic, sans-serif, serif;
+    margin: 0;
+    margin-top: -3px;
+    color: white;
+}
+
+#FHeading span:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#FHeading span:nth-child(2) {
+    font-size: 16px !important;
+}
+
+#FMHeading {
+    display: flex;
+    align-items: center;
+}
+space3{
+    width: 1px;
+    height: 5px;
+    display: block;
+}
