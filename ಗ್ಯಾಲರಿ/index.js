@@ -10,7 +10,9 @@ var Images = {
         "../assets/gallery/1-Batch-1.jpg",
         "../assets/gallery/2-Batch-1.jpg",
         "../assets/gallery/3-Batch-1.jpg",
-        "../assets/gallery/4-Batch-1.jpg"
+        "../assets/gallery/4-Batch-1.jpg",
+        "../assets/gallery/1-Pravachana.jpg",
+        "../assets/gallery/2-Pravachana.jpg"
     ],
     "ಮಹಾರುದ್ರ ಯಜ್ಞ": [
         "../assets/gallery/1-MahaRudra.jpg",
@@ -31,9 +33,11 @@ var Images = {
         "../assets/gallery/2-GaneshaPooja.jpg",
         "../assets/gallery/3-GaneshaPooja.jpg"
     ],
-    "ಪ್ರವಚನ":[
-        "../assets/gallery/1-Pravachana.jpg",
-        "../assets/gallery/2-Pravachana.jpg"
+    "ವೇದ ತರಬೇತಿ":[
+        "../assets/gallery/Veda (1).jpeg",
+        "../assets/gallery/Veda (2).jpeg",
+        "../assets/gallery/Veda (3).jpeg",
+        "../assets/gallery/Veda (4).jpeg"
     ],
     "ಯೋಗ ದಿನಾಚರಣೆ":[
         "../assets/gallery/1-OtherActivities.jpg",
@@ -78,4 +82,4 @@ Add("ಮಹಾರುದ್ರ ಯಜ್ಞ", "../assets/gallery/1-MahaRudra.jpg"
 Add("ಮೀಡಿಯಾ", "../assets/gallery/1-Media.jpg")
 Add("ಗಣೇಶ ಪೂಜೆ", "../assets/gallery/1-GaneshaPooja.jpg")
 Add("ಯೋಗ ದಿನಾಚರಣೆ", "../assets/gallery/1-OtherActivities.jpg")
-Add("ಪ್ರವಚನ", "../assets/gallery/1-Pravachana.jpg")
+Add("ವೇದ ತರಬೇತಿ", "../assets/gallery/Veda (1).jpeg")

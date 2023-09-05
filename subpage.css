@@ -114,13 +114,17 @@ tbdiv {
         aspect-ratio: 1/1 !important;
     }
 
-    #VideoPlayer{
+    #VideoPlayer, #VideoLandscape{
         flex-direction: column;
         width: 80% !important;
     }
 
-    #VideoPlayer video{
+    #VideoPlayer video, #VideoLandscape video{
         margin-bottom: 25px;
+    }
+
+    #VideoLandscape video{
+        margin-top: 0 !important;
     }
 
     .SecUserCards {
@@ -294,15 +298,26 @@ iframe {
     justify-content: center;
 }
 
-#VideoPlayer{
+#VideoPlayer, #VideoLandscape{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#VideoPlayer video{
-    border-radius: 15px;
+#VideoLandscape{
+    flex-direction: column;
+    width: 80%;
 }
+
+#VideoLandscape video{
+    margin-top: 25px;
+}
+
+#VideoPlayer video, #VideoLandscape video{
+    border-radius: 15px;
+    outline: none;
+}
+
 
 #OverlayImageContainer {
     height: 90%;
