@@ -81,9 +81,16 @@ document.getElementById("OForward").addEventListener("click", function () {
     document.getElementById("OverlayImage").src = CurrentImageList[SectionImagePos - 1]
 })
 
-Add("ಬ್ಯಾಚ್ - 12", "../assets/gallery/1-Batch-1.jpg")
+Add("ವೇದ ತರಬೇತಿ ಬ್ಯಾಚ್ - 12", "../assets/gallery/1-Batch-1.jpg")
 Add("ಮಹಾರುದ್ರ ಯಜ್ಞ", "../assets/gallery/1-MahaRudra.jpg")
 Add("ಮೀಡಿಯಾ", "../assets/gallery/1-Media.jpg")
 Add("ಗಣೇಶ ಪೂಜೆ", "../assets/gallery/1-GaneshaPooja.jpg")
 Add("ಯೋಗ ದಿನಾಚರಣೆ", "../assets/gallery/1-OtherActivities.jpg")
 Add("ವೇದ ತರಬೇತಿ", "../assets/gallery/Veda (1).jpeg")
+
+for (const Imgs in Images) {
+    for (const Img of Images[Imgs]) {
+        let N = new Image();
+        N.src = Img
+    }
+}
