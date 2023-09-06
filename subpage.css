@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.NavigationDiminish #Home2{
+.NavigationDiminish #Home2 {
     display: flex;
 }
 
@@ -114,17 +114,24 @@ tbdiv {
         aspect-ratio: 1/1 !important;
     }
 
-    #VideoPlayer, #VideoLandscape{
+    #VideoPlayer,
+    #VideoLandscape {
         flex-direction: column;
         width: 80% !important;
     }
 
-    #VideoPlayer video, #VideoLandscape video{
+    #VideoPlayer video,
+    #VideoLandscape video {
         margin-bottom: 25px;
     }
 
-    #VideoLandscape video{
+    #VideoLandscape video {
         margin-top: 0 !important;
+    }
+
+
+    #VideoPlayer video {
+        width: auto !important;
     }
 
     .SecUserCards {
@@ -178,7 +185,7 @@ tbdiv {
         font-size: 25px !important;
     }
 
-    #NameVB{
+    #NameVB {
         font-size: 20px !important;
     }
 
@@ -298,22 +305,29 @@ iframe {
     justify-content: center;
 }
 
-#VideoPlayer, #VideoLandscape{
+#VideoPlayer,
+#VideoLandscape {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-#VideoLandscape{
+#VideoPlayer video {
+    width: 30%;
+}
+
+
+#VideoLandscape {
     flex-direction: column;
     width: 80%;
 }
 
-#VideoLandscape video{
+#VideoLandscape video {
     margin-top: 25px;
 }
 
-#VideoPlayer video, #VideoLandscape video{
+#VideoPlayer video,
+#VideoLandscape video {
     border-radius: 15px;
     outline: none;
 }
